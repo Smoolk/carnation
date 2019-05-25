@@ -1,0 +1,48 @@
+/*style de Shop  */
+/************* couleurs *********/
+.pink {
+    background-color:pink;
+}
+.lightcyan{
+    background-color: lightcyan;
+}
+.lightyellow{
+    background-color: lightyellow;
+}
+
+.aligner {
+    display:inline-block;
+}
+
+.ecartTop3pc{
+    margin-top:3%;
+}
+.footer{
+    background-color: #EEEBEB;
+}
+.liste{
+    position: relative;
+    border-style:solid;
+    border-color:black;
+    padding:0 10px;
+    background-color : #EEEBEB;
+}
+
+.liste:hover{
+
+    background-color : #DAD6D6;
+}
+
+.aff{
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+
+.red {
+    color : red;
+}
+
+body{
+
+}
