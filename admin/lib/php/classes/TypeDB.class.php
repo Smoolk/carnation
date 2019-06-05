@@ -1,6 +1,6 @@
 <?php
 
-class TypeDB {
+class TypeDB extends Type {
     private $_db;
     private $_array = array();
     
@@ -10,7 +10,7 @@ class TypeDB {
     
     public function getType(){
         try{
-            $query = "select grade from permis";
+            $query = "select * from type";
             $resultset = $this->_db->prepare($query);
             //$resultset->bindValue(':login',$login);
             //$resultset->bindValue(':password',$password);

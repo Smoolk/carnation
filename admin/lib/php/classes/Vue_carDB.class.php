@@ -1,6 +1,6 @@
 <?php
 
-class Vue_motoDB {
+class Vue_carDB {
 
     private $_db;
     private $_array = array();
@@ -8,12 +8,13 @@ class Vue_motoDB {
     public function __construct($db) {//contenu de $cnx (index)
         $this->_db = $db;
     }
-    public function getProduitsByType($id_permis) {
+
+    public function getProduitsByType($id_type) {
         try {
             $this->_db->beginTransaction();
-            $query = "select * from vue_moto where id_permis=:id_permis and vendu=0 order by idmoto";
+            $query = "select * from vue_car where id_type=:id_type";
             $resultset = $this->_db->prepare($query);
-            $resultset->bindValue(':id_permis', $id_permis);
+            $resultset->bindValue(':id_type', $id_type);
             $resultset->execute();
             $this->_db->commit();
             while ($data = $resultset->fetch()) {
@@ -32,7 +33,7 @@ class Vue_motoDB {
     public function getAllProduits() {
         try {
             $this->_db->beginTransaction();
-            $query = "select * from vue_moto order by idmoto";
+            $query = "select * from vue_car order by id_type, prix";
             $resultset = $this->_db->prepare($query);
             $resultset->execute();
             $this->_db->commit();
@@ -48,7 +49,7 @@ class Vue_motoDB {
             return null;
         }
     }
-    
+
     public function getPasVendu() {
         try {
             $this->_db->beginTransaction();

@@ -11,7 +11,7 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
 <html>
 
     <head>
-        <link type="images/x-icon" rel="icon" href="./admin/images/favicon.ico"/>
+        <link type="images/x-icon" rel="icon" href="./admin/images/icone.ico"/>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -21,7 +21,7 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
         <link rel="stylesheet" type="text/css" href="admin/lib/css/style.css"/>
         <link rel="stylesheet" type="text/css" href="admin/lib/css/custom.css"/>
         <script src='admin/lib/js/fonctionsJqueryDA.js'></script>
-        <title>Magasin Moto</title>
+        <title>Car Nation</title>
     </head>
     <body class="text-center">
         <div id="entete"></div>
@@ -59,7 +59,7 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
         <footer>
             <br><br>
             <div class="footer">
-                <a href="#entete"><center>Retour en haut</center></a>
+                <a href="#entete"><center>Retour en haut de la page</center></a>
             </div>
         </footer>
 </body>

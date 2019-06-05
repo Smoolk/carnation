@@ -16,17 +16,15 @@ include ('lib/php/verifier_connexion.php');
     <div class="collapse navbar-collapse navbar-inverse" id="navbarSupportedContent">
         <a href="./index.php?page=accueil.php" class="navbar-brand collapse navbar-collapse">
             <img href="./index.php?page=accueil.php" src="..//admin/images/admin.png" alt="logo" class="topLogo" height="90"/>&nbsp 
-            <h1>ADMINISTRATEUR</h1>
+            <h1>Interface<br>Administrateur</h1>
         </a>
         <ul class="navbar-nav mr-auto">
 
-            <a  href="./index.php?page=accueil.php"class="btn btn-success">Accueil</a>&nbsp
+            <a  href="./index.php?page=accueil.php"class="btn btn-danger" style="background-color: #B30202">Accueil</a>&nbsp
 
-            <a class="btn btn-warning" href="./index.php?page=tableau.php">Tableau dynamique</a>&nbsp
+            <a class="btn btn-danger" style="background-color: #B30202" href="./index.php?page=tableau.php">Tableau dynamique</a>&nbsp
 
-            <a class="btn btn-primary" href="index.php?page=disconnect.php">Déconnexion</a>&nbsp
-
-            <a class="btn btn-light" href="#" tabindex="-1" aria-disabled="true">Ride safe</a>
+            <a class="btn btn-danger" style="background-color: #B30202" href="index.php?page=disconnect.php">Déconnexion</a>&nbsp
 
         </ul>
     </div>

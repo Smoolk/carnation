@@ -1,6 +1,6 @@
 <?php
 
-class MotoDB {
+class produitsDB extends produits {
 
     private $_db;
     private $_array = array();
@@ -9,11 +9,11 @@ class MotoDB {
         $this->_db = $db;
     }
 
-    public function updateMoto($champ, $nouveau, $id) {
-        
+    public function updateProduit($champ, $nouveau, $id) {
+
         try {
             // PREPARER LA REQUETE
-            $query = "UPDATE moto set " . $champ . " = '" . $nouveau . "' where id_moto ='" . $id . "'";
+            $query = "UPDATE produits set " . $champ . " = '" . $nouveau . "' where id_produit ='" . $id . "'";
             $resultset = $this->_db->prepare($query);
             $resultset->execute();
         } catch (PDOException $e) {
@@ -21,11 +21,14 @@ class MotoDB {
         }
     }
 
-    public function getMoto() {
+    public function getProduit() {
         try {
-            $query = "select * from moto";
+            $query = "select * from produit";
             $resultset = $this->_db->prepare($query);
+            //$resultset->bindValue(':login',$login);
+            //$resultset->bindValue(':password',$password);
             $resultset->execute();
+
             while ($data = $resultset->fetch()) {
                 $_array[] = $data;
             }

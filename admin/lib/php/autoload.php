@@ -7,7 +7,7 @@ function autoload($nom_classe) {
         require './admin/lib/php/classes/' . $nom_classe . '.class.php';
     }
     else {
-        print "Aucune charge classée : ".$nom_classe;
+        print "Aucune classe chargée : ".$nom_classe;
     }
 }
 

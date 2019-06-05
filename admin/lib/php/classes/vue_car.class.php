@@ -1,6 +1,6 @@
 <?php
 
-class PermisDB {
+class vue_car {
     private $_db;
     private $_array = array();
     
@@ -10,11 +10,11 @@ class PermisDB {
     
     public function getType(){
         try{
-            $query = "select * from permis";
+            $query = "select * from vue_car";
             $resultset = $this->_db->prepare($query);
             //$resultset->bindValue(':login',$login);
             //$resultset->bindValue(':password',$password);
-                $resultset->execute();
+            $resultset->execute();
             while($data = $resultset->fetch()){
                 $_array[] = new Type($data);
             }   

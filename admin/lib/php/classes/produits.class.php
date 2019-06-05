@@ -1,6 +1,6 @@
 <?php
 
-class Moto {
+class produits {
     private $_attributs = array();
 
     public function __construct(array $data) {
