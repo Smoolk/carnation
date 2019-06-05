@@ -74,7 +74,7 @@ if ($liste != null) {
                     print "<br/> <b>Type : </b>" . $liste[$i]['nom_type'];
                     print "<br/> <b>Description : </b>" . $liste[$i]['description'];
                     if ($liste[$i]['stock'] > 0) {
-                        print "Il reste " . $liste[$i]['stock'] . " exemplaire";
+                        print "<br/><br/>Il reste " . $liste[$i]['stock'] . " exemplaire";
                         if ($liste[$i]['stock'] > 1) {
                             print "s";
                         }
