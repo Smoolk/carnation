@@ -64,10 +64,10 @@ if ($liste != null) {
         for ($i = 0; $i < $nbr; $i++) {
             ?>
             <div class="row">
-                <div class="col-sm-3 offset-1 demiContour text-left">
+                <div class="col-sm  demiContour text-left">
                     <br><img width="500" src="admin/images/<?php print $liste[$i]['image']; ?>" alt="produit"/><br><br>
                 </div>
-                <div class="col-sm-5 text-left borderBottom">
+                <div class="col-sm text-right borderBottom">
                     <?php
                     $perm = $liste[$i]['nom_type'];
                     print "<br/> <b>Nom : </b>" . $liste[$i]['nom_produit'];

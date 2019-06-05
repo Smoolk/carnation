@@ -25,7 +25,7 @@
                     </button>
                     <div class="lightyellow dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item " href="./index.php?page=liste_produits.php">Nos produits</a>
-                        <a class="dropdown-item" href="./index.php?page=photos.php">Photos</a>
+                        <a class="dropdown-item" href="./index.php?page=carpic.php">Photos</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="index.php?page=login.php">Administration</a>
                     </div>

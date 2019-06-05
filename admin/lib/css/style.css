@@ -46,3 +46,8 @@
 body{
 
 }
+
+.carpic{
+    position: relative;
+    text-align: center;
+}
